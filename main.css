@@ -1,0 +1,38 @@
+/* . là class trong thẻ html (chỉ 1 tập thể) */
+.nhap {
+    color: darkmagenta;
+    font-weight: 300;
+}
+
+/* # là id trong thẻ của html (chỉ 1) */
+#phu {
+    color: blueviolet;
+}
+
+h1 {
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+}
+
+ol {
+    color: rgb(51, 23, 210);
+}
+
+/* điền màu phần typing của input */
+input {
+    color: darkred;
+}
+
+button {
+    color: darkgoldenrod;
+    font-size: x-large;
+}
+
+#hinhtuvi {
+    width: 10pc;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồng Anh</title>
+
+    <!-- Đây gọi là External, là tạo thêm file css để kết nối html -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Đây gọi là css (internal)
+     Muốn đổi màu, kích cỡ trong body thì lên head chỉnh css 
+    <style>
+        h1 {
+            color: red;
+            font-size: 40px;
+        }
+
+        p {
+            color: dimgrey;
+            font-size: 20px;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- Tôi là Trương Hồng Anh kinh doanh bán nước hoa -->
+    Ctrl / để chú thích đóng mở comment
+    hoặc < ! -- cũng đc </body>\
+        <!-- Tiêu đề H1  -->
+        <h1 title="chủ đề chính"> Tử vi vui 12 con giáp </h1>
+        <!-- thuộc tính attribute là khi trỏ chuột vào tiêu đề sẽ hiện dòng chữ chủ đề chính (dùng title)-->
+
+        <!-- Đoạn văn bình thường -->
+        <p id="phu">Dưới đây là những chia sẻ, dự đoán mang tính tham khảo, chiêm nghiệm về cuộc sống, công việc và tình
+            yêu của
+            12 con giáp hôm nay 30/1/2024.</p>
+
+        <h2> Tuổi Tí</h2>
+
+        <p>Tử vi vui hôm nay ngày 30/1/2024 của 12 con giáp cho thấy người tuổi Tý luôn cố gắng vì đối phương.
+
+        <p> Công việc: Người tuổi Tý công việc luôn vận hành công việc theo ý muốn.</p>
+
+        <p>Tình cảm: Người tuổi Tý tình cảm sâu nặng, luôn vì đối phương thay đổi.</p>
+
+        <p>Tài lộc: Tài lộc chưa có nhiều, còn có lúc đánh mất nhiều tài sản. </p>
+
+        <!-- chèn ảnh dô -->
+        <!-- src là source, alt là nội dung ảnh nếu ảnh lỗi thì hiện chữ -->
+        <img title="đây là con chuột" src="https://xemtuvi.xyz/upload/images/phong-thuy-nguoi-tuoi-ti.jpg"
+            alt="Ảnh tuổi tí">
+
+        <!-- xuống dòng -->
+        <p> <a href="https://baodaknong.vn/">Tìm hiểu thêm về tuổi Tí năm 2024 tại link này</a></p>
+
+        <!--thẻ anchor là để liên kết tới trang khác -->
+        <!--href="gắn link .vn/ vào" sau > thì điền chữ gì cũng được -->
+
+
+        <!-- inline css trong thẻ điền style="gõ màu,fontsize" và đống dấu > -->
+        <h3 style="color: coral;font-size: xx-large">12 con giáp trong tử vi: </h3>
+
+        <!-- thẻ ul (hiện dấu chấm mục), li*n hiển thị danh sách bao gồm các mục -->
+        <!-- thẻ ol (hiện số từ 1 đến n),li*n -->
+        <ol>
+            <li>Tuổi Tí</li>
+            <li>Tuổi Sửu</li>
+            <li>Tuổi Dần</li>
+            <li>Tuổi Mẹo</li>
+            <li>Tuổi Thìn</li>
+            <li>Tuổi Tỵ</li>
+            <li>Tuổi Ngọ</li>
+            <li>Tuổi Mùi</li>
+            <li>Tuổi Thân</li>
+            <li>Tuổi Dậu</li>
+            <li>Tuổi Tuất</li>
+            <li>Tuổi Hợi</li>
+        </ol>
+
+        <!--thẻ table dùng để lập bảng ngang -->
+        <!--thẻ table gồm 2 phần: thead đầu và tbody thân -->
+        <table>
+            <!-- trong thead có th là table heading là hiển thị dòng ngang dùng để cho tbody điền theo cột -->
+            <thead>
+                <th>STT</th>
+                <th>Họ tên</th>
+                <th>Địa Chỉ</th>
+                <th>Con gì</th>
+            </thead>
+
+            <tbody>
+                <!-- trong tbody có tr và td -->
+                <!-- thẻ tr bao gồm thẻ th để điền theo đúng hàng ngang và nhiều thứ tự user mong muốn -->
+                <!-- thẻ tr chứa td là chứa nội dung theo th yêu cầu -->
+                <tr>
+                    <td>01</td>
+                    <td>Hồng Anh </td>
+                    <td>TPHCM</td>
+                    <td>Tuổi Thân</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Nguyên Kha</td>
+                    <td>Bình Thuận</td>
+                    <td>Tuổi Sửu</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Strong</td>
+                    <td>Nghệ An</td>
+                    <td>Tuổi Mùi</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Hoa</td>
+                    <td>Bến Tre</td>
+                    <td>Tuổi Tỵ</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <!-- thẻ input gồm có: text (dùng để nhập), checkbox (dùng để tích ô), radio (dùng để chọn 1 trong n) -->
+        <p class="nhap">Mời bạn nhập năm sinh: </p><input type="text">
+        <p class="nhap">Mời bạn nhập họ tên: </p> <input type="text">
+
+        <p>bạn đã có gia đình chưa? <input type="checkbox"></p>
+
+        <p>bạn có tin vào tôn giáo không? <input type="checkbox"></p>
+
+        <p>Bạn thuộc giới tính nào? </p>
+        <p><input name="gender" type="radio"> Nam </p>
+        <p><input name="gender" type="radio"> Nữ</p>
+        <p><input name="gender" type="radio"> Khác</p>
+
+        <!-- thẻ button dùng để nhấp vào đăng kí -->
+        <button> <img id="hinhtuvi"
+                src="https://th.bing.com/th/id/R.409e66bbc135feea86aeaf2a5fda7791?rik=wXq7VS%2bmy3nvZQ&riu=http%3a%2f%2fhodongba.vn%2fuploads%2fnews%2f2016_07%2f11.jpg&ehk=TNXs8NonzC0XYibacbN09sFzM%2b0FASHxa3IUuEQg8qE%3d&risl=&pid=ImgRaw&r=0"
+                alt="">
+            <p></p> Đăng kí ngay
+        </button>
+
+</html>
